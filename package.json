@@ -1,0 +1,39 @@
+{
+  "name": "postcss-egg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "build": "babel src/index.js -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobp100/postcss-egg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobp100/postcss-egg/issues"
+  },
+  "homepage": "https://github.com/jacobp100/postcss-egg#readme",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.0"
+  },
+  "dependencies": {
+    "postcss": "^5.0.21"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
